@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <icon type="icon" src=""></icon>
+    <title>multi step form main</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CSS Bootstrap -->
+    <link href="bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body style="background-color: #edf5ff;">
+
+    <!--step 1 start-->
+    <div class="col-md-12 d-flex justify-content-center" id="multi-step-form">
+        <div style="width: 71%;" class="tab" id="step-1">
+            <div class="form-container col-md-12 shadow-sm">
+                <div class="col-md-5">
+                    <div class="position-relative">
+                        <img src="../assets/images/bg-sidebar-desktop.svg" class="img-fluid" />
+
+                        <div class="position-absolute top-0 start-0 mt-4 ms-4">
+                            <div class="active">
+                                <div class="ms-3 col-sm-12 active mt-3" id="account" onclick="currentStep()">
+                                    <div class="row">
+                                        <div class="col-sm-2 rounded-div mt-2">
+                                            <small class="num-color">1</small>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <span class="f-color">STEP 1</span><br />
+                                            <span class="font-color">YOUR INFO</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms-3 col-sm-12 mt-3" id="account" onclick="nextStep()">
+                                    <div class="row">
+                                        <div class="col-sm-2 rounded-divs mt-2">
+                                            <small class="num-colors">2</small>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <span class="f-color">STEP 2</span><br />
+                                            <span class="font-color">SELECT PLAN</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms-3 col-sm-12 mt-3" id="account" onclick="dubllNextStep()">
+                                    <div class="row">
+                                        <div class="col-sm-2 rounded-divs mt-2">
+                                            <small class="num-colors">3</small>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <span class="f-color">STEP 3</span><br />
+                                            <span class="font-color">ADD-ONS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms-3 col-sm-12 mt-3" id="account" onclick="dubll2NextStep()">
+                                    <div class="row">
+                                        <div class="col-sm-2 rounded-divs mt-2">
+                                            <small class="num-colors">4</small>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <span class="f-color">STEP 4</span><br />
+                                            <span class="font-color">SUMMERY</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--form start-->
+                <div class="col-md-7">
+                    <form>
+                        <div class="mt-4">
+                            <h1 style="font-family: 'Ubuntu-Bold'; color: #052757;">Personal info</h1>
+                            <p class="text-secondary text-wrap" style="font-family: 'Ubuntu-Medium';">
+                                please provide
+                                your name, email address, and phone number
+                            </p>
+                        </div>                        <div class="form-group mt-5">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="  e.g. Stephen King">
+                        </div>
+                        <div class="form-group mt-2">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="  e.g. stephenking@lorem.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="  e.g. +1 234 567 890">
+                        </div>
+                        <div>
+                            <button onclick="nextStep()" type="button" class="button float-end mt-5" style="background-color: #03285c;">
+                                Next Step
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <!--form end-->
+                <!--step 1 end-->
+
+            </div>
+        </div>
+    </div>
+    <!--step 1 end-->
+    <!--step 2 start-->
+    <div class="col-md-12 d-flex justify-content-center" id="multi-step-form">
+        <div style="width: 71%;" class="tab" id="step-2">
+            <div class="form-container col-md-12 shadow-sm">
+                <div class="col-md-5">
+                    <div class="position-relative">
+                        <img src="../assets/images/bg-sidebar-desktop.svg" class="img-fluid" />
+
+                        <div class="position-absolute top-0 start-0 mt-4 ms-4">
+                            <div class="active">
+                                <div class="ms-3 col-sm-12 mt-3" id="account" onclick="prevStep()">
+                                    <div class="row">
+                                        <div class="col-sm-2 rounded-divs mt-2">
+                                            <small class="num-colors">1</small>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <span class="f-color">STEP 1</span><br />
+                                            <span class="font-color">YOUR INFO</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms-3 col-sm-12 mt-3" id="account" onclick="currentStep()">
+                                    <div class="row">
+                                        <div class="col-sm-2 rounded-div mt-2">
+                                            <small class="num-color">2</small>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <span class="f-color">STEP 2</span><br />
+                                            <span class="font-color">SELECT PLAN</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms-3 col-sm-12 mt-3" id="account" onclick="nextStep()">
+                                    <div class="row">
+                                        <div class="col-sm-2 rounded-divs mt-2">
+                                            <small class="num-colors">3</small>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <span class="f-color">STEP 3</span><br />
+                                            <span class="font-color">ADD-ONS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms-3 col-sm-12 mt-3" id="account" onclick="dubllNextStep()">
+                                    <div class="row">
+                                        <div class="col-sm-2 rounded-divs mt-2">
+                                            <small class="num-colors">4</small>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <span class="f-color">STEP 4</span><br />
+                                            <span class="font-color">SUMMERY</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--form start-->
+                <div class="col-md-7">
+                    <form>
+                        <div class="mt-4">
+                            <h1 style="font-family: 'Ubuntu-Bold'; color: #052757;">Select your plan</h1>
+                            <p class="text-secondary text-wrap" style="font-family: 'Ubuntu-Medium';">
+                                You have the option of monthly or yearly billing
+                            </p>
+                        </div>
+
+                        <!--mothly-->
+                        <div id="page1" class="row page">
+                            <div class="col-md-3 box-step2 mt-4">
+                                <img src="../assets/images/icon-arcade.svg" class="mt-3" />
+                                <h5 class="mt-4">Arcade</h5>
+                                <p>$9/mo</p>
+                            </div>
+                            <div class="col-md-3 box-step2 mt-4 ms-4">
+                                <img src="../assets/images/icon-advanced.svg" class="mt-3" />
+                                <h5 class="mt-4">Advanced</h5>
+                                <p>$12/mo</p>
+                            </div>
+                            <div class="col-md-3 box-step2 mt-4 ms-4">
+                                <img src="../assets/images/icon-pro.svg" class="mt-3" />
+                                <h5 class="mt-4">Pro</h5>
+                                <p>$15/mo</p>
+                            </div>
+                        </div>
+
+                        <!--yearly-->
+                        <div id="page2" class="row page hidden">
+                            <div class="col-md-3 box-step2 mt-3">
+                                <img src="../assets/images/icon-arcade.svg" class="mt-3" />
+                                <h5 class="mt-4">Arcade</h5>
+                                <p>$90/yr</p>
+                                <p style="font-size: 15px;">2 months free</p>
+                            </div>
+                            <div class="col-md-3 box-step2 mt-3 ms-4">
+                                <img src="../assets/images/icon-advanced.svg" class="mt-3" />
+                                <h5 class="mt-4">Advanced</h5>
+                                <p>$120/yr</p>
+                                <p style="font-size: 15px;">2 months free</p>
+                            </div>
+                            <div class="col-md-3 box-step2 mt-3 ms-4">
+                                <img src="../assets/images/icon-pro.svg" class="mt-3" />
+                                <h5 class="mt-4">Pro</h5>
+                                <p>$150/yr</p>
+                                <p style="font-size: 15px;">2 months free</p>
+                            </div>
+                        </div>
+
+                        <!--toggle-->
+                        <div class="row" id="toggle">
+                            <div class="col-md-4 mt-5" style="direction: rtl;">
+                                <p style="font-family: 'Ubuntu-Bold';">yearly</p>
+                            </div>
+                            <div class="col-md-2 mt-5">
+                                <label class="switch">
+                                    <input type="checkbox" id="toggle" class="toggle-input">
+                                    <span class="slider round" for="toggle"></span>
+                                </label>
+                            </div>
+                            <div class="col-md-4 mt-5">
+                                <p style="font-family: 'Ubuntu-Bold';">monthly</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <button type="button" onclick="nextStep()" class="button float-end mt-5" style="background-color: #03285c; cursor:pointer;">Next Step</button>
+                            <button type="button" onclick="prevStep()" class="btn-prev mt-5">Go Back</button>
+                        </div>
+                    </form>
+                </div>
+                <!--form end-->
+                <!--step 1 end--> 
+            </div>
+        </div>
+    </div>
+    <!--step 2 end-->
+    <!--step 3 start-->
+    <div class="col-md-12 d-flex justify-content-center" id="multi-step-form">
+        <div style="width: 71%;" class="tab" id="step-3">
+            <div class="form-container col-md-12 shadow-sm">
+                <div class="col-md-5">
+                    <div class="position-relative">
+                        <img src="../assets/images/bg-sidebar-desktop.svg" class="img-fluid" />
+
+                        <div class="position-absolute top-0 start-0 mt-4 ms-4">
+                            <div class="active">
+                                <div class="ms-3 col-sm-12 mt-3" id="account" onclick="dubllPrevStep()">
+                                    <div class="row">
+                                        <div class="col-sm-2 rounded-divs mt-2">
+                                            <small class="num-colors">1</small>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <span class="f-color">STEP 1</span><br />
+                                            <span class="font-color">YOUR INFO</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms-3 col-sm-12 mt-3" id="account" onclick="prevStep()">
+                                    <div class="row">
+                                        <div class="col-sm-2 rounded-divs mt-2">
+                                            <small class="num-colors">2</small>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <span class="f-color">STEP 2</span><br />
+                                            <span class="font-color">SELECT PLAN</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms-3 col-sm-12 mt-3" id="account" onclick="currentStep()">
+                                    <div class="row">
+                                        <div class="col-sm-2 rounded-div mt-2">
+                                            <small class="num-color">3</small>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <span class="f-color">STEP 3</span><br />
+                                            <span class="font-color">ADD-ONS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms-3 col-sm-12 mt-3" id="account" onclick="nextStep()">
+                                    <div class="row">
+                                        <div class="col-sm-2 rounded-divs mt-2">
+                                            <small class="num-colors">4</small>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <span class="f-color">STEP 4</span><br />
+                                            <span class="font-color">SUMMERY</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--form start-->
+                <div class="col-md-7">
+                    <form>
+                        <div class="mt-4">
+                            <h1 style="font-family: 'Ubuntu-Bold'; color: #052757;">Pick add-ons</h1>
+                            <p class="text-secondary text-wrap" style="font-family: 'Ubuntu-Medium';">
+                                Add - ons help enhance your gaming experience.
+                            </p>
+                        </div>
+                        <!--monthly-->
+                        <div class="row">
+                            <div class="col-md-11 add-box mt-4">
+                                <div class="row" id="myDiv1">
+                                    <div class="col-md-1 m-3">
+                                        <input type="checkbox" class="mt-3" id="check1" style="width:20px; height:20px;">
+                                    </div>
+                                    <div class="col-md-7 mt-3">
+                                        <p class="mb-0 text-addons">Online service</p>
+                                        <p>Access to multiplayer games</p>
+                                    </div>
+                                    <div class="col-md-2 mt-4">
+                                        <p style="color:#675ebf;">+$1/mo</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-11 add-box mt-4">
+                                <div class="row" id="myDiv2">
+                                    <div class="col-md-1 m-3">
+                                        <input type="checkbox" class="mt-3" id="check2" style="width:20px; height:20px;">
+                                    </div>
+                                    <div class="col-md-7 mt-3">
+                                        <p class="mb-0 text-addons">Larger storage</p>
+                                        <p>Extra 1TB of cloud save</p>
+                                    </div>
+                                    <div class="col-md-2 mt-4">
+                                        <p style="color:#675ebf;">+$2/mo</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-11 add-box mt-4">
+                                <div class="row" id="myDiv3">
+                                    <div class="col-md-1 m-3">
+                                        <input type="checkbox" class="mt-3" id="check3" style="width:20px; height:20px;">
+                                    </div>
+                                    <div class="col-md-7 mt-3">
+                                        <p class="mb-0 text-addons">Customizable Profile </p>
+                                        <p>Custom theme on your profile</p>
+                                    </div>
+                                    <div class="col-md-2 mt-4">
+                                        <p style="color:#675ebf;">+$2/mo</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--yearly-->
+                        <!--<div class="row">
+                            <div class="col-md-11 add-box mt-4">
+                                <div class="row">
+                                    <div class="col-md-1 m-3">
+                                        <input type="checkbox" class="mt-3" id="name" style="width:20px; height:20px;">
+                                    </div>
+                                    <div class="col-md-7 mt-3">
+                                        <p class="mb-0 text-addons">Online service</p>
+                                        <p>Access to multiplayer games</p>
+                                    </div>
+                                    <div class="col-md-2 mt-4">
+                                        <p style="color:#675ebf;">+$1/yr</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-11 add-box mt-4">
+                                <div class="row">
+                                    <div class="col-md-1 m-3">
+                                        <input type="checkbox" class="mt-3" id="name" style="width:20px; height:20px;">
+                                    </div>
+                                    <div class="col-md-7 mt-3">
+                                        <p class="mb-0 text-addons">Larger storage</p>
+                                        <p>Extra 1TB of cloud save</p>
+                                    </div>
+                                    <div class="col-md-2 mt-4">
+                                        <p style="color:#675ebf;">+$2/yr</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-11 add-box mt-4">
+                                <div class="row">
+                                    <div class="col-md-1 m-3">
+                                        <input type="checkbox" class="mt-3" id="name" style="width:20px; height:20px;">
+                                    </div>
+                                    <div class="col-md-7 mt-3">
+                                        <p class="mb-0 text-addons">Customizable Profile </p>
+                                        <p>Custom theme on your profile</p>
+                                    </div>
+                                    <div class="col-md-2 mt-4">
+                                        <p style="color:#675ebf;">+$2/yr</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>-->
+
+                        <div>
+                            <button type="button" onclick="nextStep()" class="button float-end mt-5" style="background-color: #03285c;">Next Step</button>
+                            <button type="button" onclick="prevStep()" class="btn-prev mt-5">Go Back</button>
+                        </div>
+                    </form>
+                </div>
+                <!--form end-->
+                <!--step 1 end-->
+
+            </div>
+        </div>
+    </div>
+    <!-- step 3 end -->
+    <!-- step 4 start -->
+    <div class="col-md-12 d-flex justify-content-center" id="multi-step-form">
+        <div style="width: 71%;" class="tab" id="step-4">
+            <div class="form-container col-md-12 shadow-sm">
+                <div class="col-md-5">
+                    <div class="position-relative">
+                        <img src="../assets/images/bg-sidebar-desktop.svg" class="img-fluid" />
+
+                        <div class="position-absolute top-0 start-0 mt-4 ms-4">
+                            <div class="active">
+                                <div class="ms-3 col-sm-12 active mt-3" id="account" onclick="dubll2PrevStep()">
+                                    <div class="row">
+                                        <div class="col-sm-2 rounded-divs mt-2">
+                                            <small class="num-colors">1</small>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <span class="f-color">STEP 1</span><br />
+                                            <span class="font-color">YOUR INFO</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms-3 col-sm-12 mt-3" id="account" onclick="dubllPrevStep()">
+                                    <div class="row">
+                                        <div class="col-sm-2 rounded-divs mt-2">
+                                            <small class="num-colors">2</small>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <span class="f-color">STEP 2</span><br />
+                                            <span class="font-color">SELECT PLAN</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms-3 col-sm-12 mt-3" id="account" onclick="prevStep()">
+                                    <div class="row">
+                                        <div class="col-sm-2 rounded-divs mt-2">
+                                            <small class="num-colors">3</small>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <span class="f-color">STEP 3</span><br />
+                                            <span class="font-color">ADD-ONS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms-3 col-sm-12 mt-3" id="account" onclick="currentStep()">
+                                    <div class="row">
+                                        <div class="col-sm-2 rounded-div mt-2">
+                                            <small class="num-color">4</small>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <span class="f-color">STEP 4</span><br />
+                                            <span class="font-color">SUMMERY</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--form start-->
+                <div class="col-md-7">
+                    <form>
+                        <div class="mt-4">
+                            <h1 style="font-family: 'Ubuntu-Bold'; color: #052757;">Finishing up</h1>
+                            <p class="text-secondary text-wrap" style="font-family: 'Ubuntu-Medium';">
+                                Double-check everything looks OK before confirming.
+                            </p>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-11 mt-4" style="background-color:#fafbff;">
+                                <div class="row">
+                                    <div class="col-md-10 mt-3">
+                                        <p class="mb-0 text-addons">Arcade (Monthly)</p>
+                                        <a href="no-link" style="color:#b8b8c2;">chenge</a>
+                                    </div>
+                                    <div class="col-md-2 mt-4">
+                                        <p class="text-addons">+$9/mo</p>
+                                    </div>
+                                    <hr class="mt-4" style="color:#b8b8c2;" />
+
+                                    <div class="col-md-10 mt-2">
+                                        <p style="color:#b8b8c2;">Online service</p>
+                                    </div>
+                                    <div class="col-md-2 mt-2">
+                                        <p class="text-finish">+$1/mo</p>
+                                    </div>
+
+                                    <div class="col-md-10">
+                                        <p style="color:#b8b8c2;">Larger storage</p>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <p class="text-finish">+$2/mo</p>
+                                    </div>
+
+                                    <div class="col-md-9 mt-5">
+                                        <p style="color:#b8b8c2;">Total (per month)</p>
+                                    </div>
+                                    <div class="col-md-2 mt-5">
+                                        <p style="font-family: Ubuntu-bold; color: #4f46f2; font-size:22px;">+$12/mo</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="button" onclick="nextStep()" class="btn-confirm float-end mt-5">Confirm</button>
+                            <button type="button" onclick="prevStep()" class="btn-prev mt-5">Go Back</button>
+                        </div>
+                    </form>
+                </div>
+                <!--form end-->
+                <!--step 4 end-->
+
+            </div>
+        </div>
+    </div>
+
+    <!--step 5 thank you-->
+    <div class="col-md-12 d-flex justify-content-center" id="multi-step-form">
+        <div style="width: 71%;" class="tab" id="step-5">
+            <div class="form-container col-md-12 shadow-sm">
+                <div class="col-md-5">
+                    <div class="position-relative">
+                        <img src="../assets/images/bg-sidebar-desktop.svg" class="img-fluid" />
+
+                        <div class="position-absolute top-0 start-0 mt-4 ms-4">
+                            <div class="active">
+                                <div class="ms-3 col-sm-12 active mt-3" id="account" onclick="dubll2PrevStep()">
+                                    <div class="row">
+                                        <div class="col-sm-2 rounded-divs mt-2">
+                                            <small class="num-colors">1</small>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <span class="f-color">STEP 1</span><br />
+                                            <span class="font-color">YOUR INFO</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms-3 col-sm-12 mt-3" id="account" onclick="dubllPrevStep()">
+                                    <div class="row">
+                                        <div class="col-sm-2 rounded-divs mt-2">
+                                            <small class="num-colors">2</small>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <span class="f-color">STEP 2</span><br />
+                                            <span class="font-color">SELECT PLAN</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms-3 col-sm-12 mt-3" id="account" onclick="prevStep()">
+                                    <div class="row">
+                                        <div class="col-sm-2 rounded-divs mt-2">
+                                            <small class="num-colors">3</small>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <span class="f-color">STEP 3</span><br />
+                                            <span class="font-color">ADD-ONS</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ms-3 col-sm-12 mt-3" id="account" onclick="currentStep()">
+                                    <div class="row">
+                                        <div class="col-sm-2 rounded-div mt-2">
+                                            <small class="num-color">4</small>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <span class="f-color">STEP 4</span><br />
+                                            <span class="font-color">SUMMERY</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--form start-->
+                <div class="col-md-7 mt-5">
+                    <form>
+                        <!--thank you page-->
+                        <div id="thankYou" class="mt-5 pt-5">
+                            <div class="text-center text-finish">
+                                <img src="../assets/images/icon-thank-you.svg" />
+                                <h1 class="mt-4">Thank you!</h1>
+                                <p style="color:#b8b8c2;">
+                                    Thanks for confirming your subscription ! We hope you have fun using our platform .
+                                    If you ever need support , please feel free to email us at
+                                    <a href="support@loremgaming.com" style="color:#b8b8c2;  text-decoration: none;">support@loremgaming.com </a>
+                                </p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!--form end-->
+                <!--step 1 end-->
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JS -->
+    <script src="script.js"></script>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
